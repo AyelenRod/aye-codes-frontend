@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera web</title>
+
+    <!-- Estilos CSS para la tabla -->
+    <style>
+        table, th, td{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!-- Etiquetas de titulos (cabeceras y subcabeceras) -->
+   <h1>Mi primer heading</h1> 
+   <h2>Mi segundo heading</h2> 
+   <h3>Mi tercer heading</h3>
+   <h4>Mi cuarto heading</h4>
+   <h5>Mi quinto heading</h5>
+   <h6>Mi sexto heading</h6>
+
+   <p>Este es un parrafo de texto.</p>
+   <p>Parrafo en una nueva linea</p>
+   <hr> <!-- Etiqueta de linea horizontal para separar texto -->
+   <h2>Parrafo con titulo</h2>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+   <p>
+    Lorem ipsum <span style="color:brown">dolor sit amet consectetur adipisicing elit.</span> <!-- Etiqueta span para resaltar texto -->
+    Voluptas, voluptate. <br> <!-- Etiqueta de salto de linea -->
+    para ver el funcionamiento de span
+   </p>
+
+   <!-- Etiquetas de enlace e imagen -->
+   <a href="https://www.google.com">Ir a Google</a> <!-- Etiqueta de enlace en la misma pestaña-->
+   <br>
+   <a href="https://www.google.com" target="_blank">Ir a Google</a> <!-- Etiqueta de enlace en otra pestaña-->
+   <br>
+
+   <img src="https://pin.it/54fMhMQMl" alt="Imagen de ejemplo"/> <!-- Etiqueta de imagen con texto alternativo -->
+   <img src="img/gatito.jpg" width="300" height="500"/> <!-- Etiqueta de imagen con imagen desde carpetas y dimensiones -->
+   <br>
+
+   <!-- Etiquetas de formulario -->
+   <form action=""/formulario" method="post"> <!-- Etiqueta de formulario con propiedades que indican a donde se envian los datos. 
+    SI se usa GET se muestran los datos si se usa POST no se muestran los datos en la url -->
+    <label for="nombre">Nombre</label> <!-- Etiqueta de etiqueta para el campo de texto -->
+    <input value="Aye" type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre"/> <!-- Etiqueta de campo de texto -->
+    <br>
+    <label for="comentario">Comentario</label>
+    <textarea cols="30" rows="10" name="comentario" placeholder="Ingrese su comentario">Area con valor por defecto</textarea> <!-- Etiqueta de área de texto con dimensiones -->
+   </form>
+   <br>
+
+   <!-- lista no ordenada-->
+   <ul>
+       <li>Elemento 1</li>
+       <li>Elemento 2</li>
+       <li>Elemento 3</li>
+   </ul>
+
+    <!-- lista ordenada-->
+    <ol>
+         <li>Elemento 1</li>
+         <li>Elemento 2</li>
+         <li>Elemento 3</li>
+    </ol>
+    <ol>
+         <li value="20">Elemento 1</li>
+         <li>Elemento 2</li>
+         <li>Elemento 3</li>
+    </ol>
+
+    <!-- lista ordenada anidada-->
+    <ol> <!-- Lista ordenada anidada con estilo de numeración romana -->
+         <li>Elemento 1</li>
+         <li>Elemento 2</li>
+         <li>Elemento 3</li>
+         <li>
+            <ol>
+                <li style="list-style-type:lower-roman">Elemento 1</li>
+                <li style="list-style-type:lower-roman">Elemento 2</li>
+                <li style="list-style-type:lower-roman">Elemento 3</li>
+            </ol>
+         </li>
+    </ol> 
+
+    <!-- Tablas-->
+    <table style="width: 500px;"> 
+        <thead> <!-- Etiqueta de encabezado de tabla -->
+            <tr>
+                <th>Encabezado 1</th> <!-- Etiqueta de celda de encabezado -->
+                <th>Encabezado 2</th>
+            </tr>
+        </thead>
+        <tbody> <!-- Etiqueta de cuerpo de tabla -->
+            <td>Celda 1</td> <!-- Etiqueta de celda de tabla -->
+            <td>Celda 2</td>
+        </tr>
+        <tr>
+            <td>Celda 1</td>
+            <td>Celda 2</td>
+        </tr>
+        </tbody>
+        <tfoot> <!-- Etiqueta de pie de tabla -->
+            <tr>
+                <td>Pie de tabla 1</td>
+                <td>Pie de tabla 2</td>
+            </tr>
+    </table>
+
+</body>
+</html>

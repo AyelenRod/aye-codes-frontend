@@ -74,3 +74,45 @@ Ambos sirven para identificar elementos, pero tienen reglas de uso distintas.
 * **`<a>` vs `<button>`:** Usa `<a>` para **cambiar de página** o ir a un link. Usa `<button>` para **ejecutar una acción** (abrir un menú, enviar un formulario, borrar un item).
 * **`<ul>` vs `<ol>`:** Ambas son listas (`<li>`). `<ul>` es desordenada (puntos/bullets) y `<ol>` es ordenada (1, 2, 3...).
 * **Atributo `alt` en imágenes:** No es solo para cuando falla la imagen; es vital para que las personas ciegas que usan lectores de pantalla sepan qué hay en la foto (Accesibilidad).
+
+# 🎨 Bitácora de Aprendizaje - Marzo 2026
+
+## 📝 Sesión: 31-03-2026
+**Enfoque:** Fundamentos de CSS (Cascading Style Sheets)  
+**Recurso:** [Curso de CSS - Canal HolaMundo](https://www.youtube.com/@HolaMundoDev)
+
+### 🚀 Resumen del día
+Hoy completé el módulo de CSS básico. Aprendí a separar la estructura (HTML) del diseño, aplicando estilos globales y específicos. El ejercicio final consistió en transformar el blog básico de HTML en un sitio visualmente atractivo.
+
+### 🛠️ Conceptos Practicados
+* **Carga de Estilos:** Uso de la etiqueta `<link>` para archivos externos (la mejor práctica).
+* **Selectores:** Selección por etiqueta, clase (`.`) e ID (`#`).
+* **Box Model:** Control de `content`, `padding`, `border` y `margin`.
+* **Diseño:** Propiedades de `background`, colores (Hex, RGB), y manejo de `display` (block, inline, inline-block).
+* **Listas y Tablas:** Personalización de viñetas y bordes colapsados.
+
+---
+
+## 🧠 Notas Personales: Conceptos Clave de CSS
+
+### 1. `Margin` vs `Padding` (El Box Model)
+* **`Padding` (Relleno):** Es el espacio **interno**. Empuja el contenido hacia adentro, alejándolo del borde del propio elemento. Afecta el tamaño del elemento si tiene un color de fondo.
+* **`Margin` (Margen):** Es el espacio **externo**. Crea separación entre el elemento actual y sus vecinos. No afecta el interior de la "caja".
+
+### 2. `Display: Block` vs `Inline` vs `Inline-block`
+* **`block`:** Ocupa **todo el ancho** disponible (como un `<div>` o `<h1>`). Empieza siempre en una línea nueva.
+* **`inline`:** Solo ocupa el ancho de su contenido (como un `<span>` o `<a>`). No permite cambiar el ancho (`width`) ni el alto (`height`).
+* **`inline-block`:** Lo mejor de ambos mundos. Se alinea en fila como un `inline`, pero permite modificar su tamaño como un `block`.
+
+### 3. Unidades: `px` vs `em` vs `rem`
+* **`px` (Píxeles):** Unidad absoluta y fija. No cambia si el usuario escala la fuente del navegador.
+* **`em`:** Unidad relativa al tamaño de fuente del **padre**. Puede ser difícil de calcular si se anidan muchos elementos.
+* **`rem` (Root EM):** Unidad relativa al tamaño de fuente de la **raíz** (`<html>`). Es la más recomendada para accesibilidad y diseño responsivo.
+
+### 4. `Color` vs `Background-color`
+* **`color`:** Cambia el color del **texto** e iconos.
+* **`background-color`:** Cambia el color del **fondo** del contenedor.
+
+---
+
+> **💡 Tip de oro:** Siempre usa `box-sizing: border-box;` en tu CSS global. Esto hace que el `padding` y el `border` no aumenten el tamaño total de la caja, evitando que tus diseños se "rompan" inesperadamente.

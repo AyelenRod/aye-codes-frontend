@@ -1,0 +1,194 @@
+/*Se puede crear estilos definiendo la etiqueta del HTML 
+Ejemplo: 
+h1 {
+    color: blueviolet;
+}
+Pero de preferencia se deben usar los IDs y las clases*/
+
+#titulo { /*El simbolo # se usa para definir un ID*/
+    color: blueviolet;
+}
+
+p.texto { /*El simbolo . se usa para definir una clase*/ /*Si queremos definir un estilo para una etiqueta con una clase, se escribe el nombre de la etiqueta seguido del punto y el nombre de la clase*/
+    color:brown;
+}
+
+p.especial {
+    color:rgb(150, 116, 65);
+}
+
+div p{ /*Si queremos definir un estilo para una etiqueta que se encuentra dentro de otra etiqueta, se escribe el nombre de la etiqueta padre seguido de un espacio y el nombre de la etiqueta hija*/
+    color:green;
+}
+
+div h2, div h3 { /*Si queremos definir un estilo para varias etiquetas, se escriben los nombres de las etiquetas separados por comas*/
+    color:orange;
+}
+
+* { /*El simbolo * se usa para definir un estilo global, es decir, para todas las etiquetas*/
+    font-size: 24px;
+   /*  color: black; */
+}
+
+.color{ /*Se  pueden poner colores por rgb, hexadecimal, nombre del color, etc.*/
+    color: #281055;
+    /* border: 5px blue dashed; */ /*Se pueden poner bordes a las etiquetas, se define el grosor, el color y el tipo de borde*/
+    /* dashed: línea discontinua, dotted: línea punteada, solid: línea continua, double: línea doble, groove: línea con relieve
+    ridge: línea con relieve invertido, inset: línea con relieve hacia adentro, outset: línea con relieve hacia afuera.
+    Ouset, Inset, groove y ridge son en 3d*/
+    border-style: dashed;
+    border-color:blueviolet;
+    border-radius: 5px;
+    border-width: 5px; /*Se pueden usar cm, mm, in, px, pt, pc, em, rem, %, etc. para definir el grosor del borde*/
+}
+
+#fondo{
+    background-color: rgba(139, 0, 139, 0.5); /*Se pueden usar colores con transparencia usando rgba, el cuarto valor es la opacidad (0 a 1)*/
+    /* opacity: 0.3;  *//*Otra forma de poner transparencia, pero esta afecta a todo el elemento, incluyendo el texto y los bordes*/
+    background-image: url('gatito.jpg');
+    height: 200px;
+    /* background-size: auto; */ /*Cover: la imagen se ajusta al tamaño del elemento, contain: la imagen se ajusta al tamaño del elemento sin recortarse, auto: la imagen mantiene su tamaño original*/
+    background-size: 100px 100px;
+    background-repeat: no-repeat; /*Se puede usar para evitar que la imagen se repita, también se puede usar repeat-x para repetir solo en horizontal, repeat-y para repetir solo en vertical, etc.*/
+    Background-position: center; /*Se puede usar para posicionar la imagen, se pueden usar valores como top, bottom, left, right, center, etc. o también se pueden usar valores en px, %, etc.*/            
+}
+
+.margen{
+    background-color: cornflowerblue;
+    margin: 15px 20px 25px 30px;
+    padding: 10px 15px 20px 25px; 
+    border: solid black 1px;
+    /*El margen es el espacio entre el borde del elemento y los elementos adyacentes, mientras que el padding es el espacio entre el borde del elemento y su contenido*/
+    /* y el border es el borde del elemento.
+    Se puede dejar en margin y padding un solo valor para que se aplique a los cuatro lados, o se pueden dejar dos valores para que el primer valor 
+    se aplique a los lados verticales y el segundo valor a los lados horizontales, o se pueden dejar cuatro valores para que se apliquen a cada lado 
+    respectivamente (top, right, bottom, left)*/
+    height: 100px;
+    width: 30px;
+    overflow: scroll; 
+    /*Se puede usar para controlar el desbordamiento del contenido, se pueden usar valores como visible (el contenido se muestra sin recortar)
+    hidden (el contenido se recorta y no se muestra), scroll (se muestran barras de desplazamiento para acceder al contenido) 
+    y auto (se muestran barras de desplazamiento solo si el contenido se desborda)*/
+    outline: 5px solid violet;
+}
+
+.text{
+    font-family: 'Oswald', sans-serif;
+    text-align: center; /*Se puede usar para alinear el texto, se pueden usar valores como left, right, center, justify, etc.*/
+    text-decoration: underline; /*Se puede usar para decorar el texto, se pueden usar valores como none, underline, overline, line-through, etc.*/
+    text-shadow: 3px 5px 5px blue; 
+    /*Se puede usar para agregar sombra al texto, se pueden usar valores como none, color, offset-x offset-y blur-radius color, etc.
+    El primer valor es el desplazamiento en el eje X, el segundo es el desplazamiento en el eje Y, el tercero es el radio de desenfoque
+    y el cuarto es el color de la sombra*/
+}
+
+ /*Se puede usar para definir el estilo de los enlaces, se pueden usar los siguientes pseudo-clases:
+ a:link (enlaces no visitados), a:visited (enlaces visitados), a:hover (enlaces cuando el mouse está sobre ellos), 
+ a:active (enlaces cuando se están clickeando).
+ Si quiero usar estas pseudo-clases, debo escribirlas en el orden correcto, es decir, primero a:link, 
+ luego a:visited, luego a:hover y por último a:active, de lo contrario no funcionarán correctamente.
+ */
+a:link{
+    color: gold;
+}
+
+a:visited{
+    color: lightcoral;
+}
+
+a:hover{
+    color: lightseagreen;
+}
+
+a:active{
+    color: rgb(19, 62, 119);
+}
+
+ul{
+    background-color: mistyrose;
+    list-style-type: none; /*Se puede usar para definir el tipo de viñeta de una lista, se pueden usar valores como disc (viñeta sólida), circle (viñeta circular), square (viñeta cuadrada), none (sin viñeta), etc.*/
+    padding-left: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /*Se puede usar para colapsar los bordes de una tabla, 
+    se pueden usar valores como collapse (los bordes se colapsan en uno solo) y separate (los bordes se mantienen separados)*/    
+}
+
+th, td{
+    border: solid orangered 2px;
+    padding: 5px;
+}
+
+th{
+    background-color:burlywood;
+    color: white;
+    text-align: left;
+}
+
+tr:nth-child(even){/*Se puede usar para seleccionar elementos en función de su posición en el árbol DOM, se pueden usar valores 
+    como nth-child(n) (selecciona el enésimo hijo), nth-child(even) (selecciona los hijos en posiciones pares), nth-child(odd) 
+    (selecciona los hijos en posiciones impares), etc.*/ 
+    background-color: lightgray;
+}
+
+tr:hover{
+    background-color: lightsteelblue;
+    cursor: pointer; /*Se puede usar para cambiar el cursor cuando se pasa el mouse sobre un elemento, 
+    se pueden usar valores como default (cursor por defecto), pointer (cursor de mano), text (cursor de texto), etc.*/ 
+}
+
+span{
+    display: block; /*Se puede usar para cambiar el tipo de display de un elemento, 
+    se pueden usar valores como block (el elemento se muestra como un bloque), 
+    inline (el elemento se muestra en línea), inline-block (el elemento se muestra en línea pero se comporta como un bloque), 
+    none (el elemento no se muestra), etc.*/
+    visibility: hidden; /*Se puede usar para ocultar un elemento sin eliminarlo del flujo del documento, 
+    se pueden usar valores como visible (el elemento se muestra), hidden (el elemento se oculta pero ocupa espacio) 
+    y collapse (el elemento se oculta y no ocupa espacio)*/
+}
+
+.inline{
+    display: inline;
+    max-width: 300px; /*Es para indicar el ancho máximo de un elemento.*/
+    background-color: lightcoral;
+  
+}
+
+#position{
+    position: relative; /*Se puede usar para posicionar un elemento, se pueden usar valores como static (posición por defecto), 
+    relative (posición relativa al flujo normal del documento), absolute (posición absoluta respecto al elemento padre más cercano con posición relativa), 
+    fixed (posición fija respecto a la ventana del navegador), sticky (posición pegajosa que se mantiene en su lugar hasta que se alcanza un punto específico)*/
+    left: 30px;
+/*     top: 20px;*/
+}
+
+.left{
+    float: left; /*Se puede usar para hacer que un elemento flote a la izquierda o a la derecha, se pueden usar valores como left (flota a la izquierda), right (flota a la derecha) y none (no flota)*/
+    width: 200px;
+    height: 200px;
+}
+
+.right{
+    float: right;
+}
+
+.container {
+    height: 200px;
+}
+
+.card{
+    border: solid 2px black;
+    border-radius: 6px;
+    margin: 0;
+    padding: 10px 0;
+    width: 33.3%;
+}
+
+.center{
+    text-align: center;
+    width: 200px;
+    margin: 0 auto; /*Se puede usar para centrar un elemento, se pueden usar valores como auto (el navegador calcula el margen automáticamente para centrar el elemento) y valores específicos en px, %, etc. para definir el margen izquierdo y derecho*/
+    background-color: mediumorchid;
+}

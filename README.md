@@ -11,7 +11,7 @@ Aquí guardo mis ejercicios, proyectos de práctica y notas técnicas de cada te
 Para mantener el orden, he dividido el aprendizaje por ramas. Puedes saltar a cada una para ver el código y las notas detalladas:
 
 * **[feat/html-css](https://github.com/AyelenRod/aye-codes-frontend/tree/feat/html-css):** 🏗️ Maquetación semántica, Box Model, Flexbox y Grid.
-* **feat/javascript (Próximamente):** 🧠 Lógica, manipulación del DOM, APIs y Asincronía.
+* **[feat/javascript](https://github.com/AyelenRod/aye-codes-frontend/tree/feat/javascript):** 🧠 Lógica y Manipulación del DOM. <-- ¡ACTUALIZADO!
 * **feat/react-next (Próximamente):** ⚛️ Componentes, Hooks, Routing y SSR.
 * **feat/tailwind (Próximamente):** 🎨 Estilos utilitarios y diseño responsivo veloz.
 
@@ -21,7 +21,7 @@ Para mantener el orden, he dividido el aprendizaje por ramas. Puedes saltar a ca
 
 - [x] **HTML5:** Etiquetas, formularios y tablas (Curso HolaMundo).
 - [x] **CSS3:** Selectores, Box Model y Estilos (Curso HolaMundo).
-- [ ] **JavaScript:** Fundamentos y lógica.
+- [x] **JavaScript:** Fundamentos y lógica.
 - [ ] **React:** Estado y Props.
 - [ ] **Next.js:** Estructura de proyectos modernos.
 
